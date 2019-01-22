@@ -1,0 +1,22 @@
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+    static-path-pattern: /static/**
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123
+    url: jdbc:mysql:///tuniu?useUnicode=true&characterEncoding=utf8
+redis:
+  host: 47.98.194.100
+  port: 6383
+  password: swyswy
+  timeout: 6000
+  minidle: 10
+  maxidle: 200
+  maxtotal: 1024
+  maxwait: 6000
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
