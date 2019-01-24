@@ -3,7 +3,7 @@ spring:
     view:
       prefix: /WEB-INF/jsp/
       suffix: .jsp
-    static-path-pattern: /static/**
+    #static-path-pattern: /**
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     username: root
@@ -20,3 +20,9 @@ redis:
   maxwait: 6000
 mybatis:
   mapper-locations: classpath:mapper/*.xml
+fdfs:
+  so-timeout: 1500
+  connect-timeout: 600
+  tracker-list: 47.98.194.100:22122
+  pool:
+    jmx-enabled: false
